@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Taylor Swift Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#seccion1">Sección 1</a></li>
+                <li><a href="#seccion2">Sección 2</a></li>
+                <li><a href="#acerca-de">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido</h2>
+            <p>Este es un blog sobre la música de la cantante Taylor Swift.</p>
+        </section>
+
+        <section id="seccion1">
+            <h2>Sección 1 = Álbumes</h2>
+            <p>En esta sección se muestran los álbumes de su autoría</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre del Álbum</th>
+                        <th>Género</th>
+                        <th>Fecha de Lanzamiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="debut.jpg" alt="Portada del álbum Taylor Swift (Debut)" width="160"></td>
+                        <td>Country</td>
+                        <td>Octubre 24, 2006</td>
+                    </tr>
+                    <tr>
+                        <td><img src="fearless.jpg" alt="Portada del álbum Fearless" width="160"></td>
+                        <td>Country/Pop</td>
+                        <td>Noviembre 11, 2008</td>
+                    </tr>
+                    <tr>
+                        <td><img src="speakNow.jpg" alt="Portada del álbum Speak Now" width="160"></td>
+                        <td>Country/Pop/Rock</td>
+                        <td>Octubre 25, 2010</td>
+                    </tr>
+                    <tr>
+                        <td><img src="red.jpg" alt="Portada del álbum Red" width="160"></td>
+                        <td>Country/Electronic/Rock</td>
+                        <td>Octubre 22, 2012</td>
+                    </tr>
+                    <tr>
+                        <td><img src="1989.jpg" alt="Portada del álbum 1989" width="160"></td>
+                        <td>Pop/Synth-Pop</td>
+                        <td>Octubre 27, 2014</td>
+                    </tr>
+                    <tr>
+                        <td><img src="reputation.jpg" alt="Portada del álbum Reputation" width="160"></td>
+                        <td>Pop/Electronic-Pop/R&B</td>
+                        <td>Novienbre 10, 2017</td>
+                    </tr>
+                    <tr>
+                        <td><img src="lover.jpg" alt="Portada del álbum Lover" width="160"></td>
+                        <td>Pop/Synth-Pop/Electronic-Pop</td>
+                        <td>Agosto 23, 2019</td>
+                    </tr>
+                    <tr>
+                        <td><img src="folklore.jpg" alt="Portada del álbum Folklore" width="160"></td>
+                        <td>Indie-Folk/Electro-folk/Indie-Electronic/Alternative-Rock</td>
+                        <td>Julio 24, 2020</td>
+                    </tr>
+                    <tr>
+                        <td><img src="evermore.jpg" alt="Portada del álbum Evermore" width="160"></td>
+                        <td>Indie-Folk/Alternative-Rock/Electro-Folk</td>
+                        <td>Diciembre 11, 2020</td>
+                    </tr>
+                    <tr>
+                        <td><img src="FearlessTaylorsVersion.jpg" alt="Portada de la regrabación de Fearless(TaylorsVersion)" width="160"></td>
+                        <td>Country/Pop (Taylor's Version)</td>
+                        <td>Abril 9, 2021</td>
+                    </tr>
+                    <tr>
+                        <td><img src="RedTaylorsVersion.jpg" alt="Portada de la regrabación de Red(TaylorsVersion)" width="160"></td>
+                        <td>Country/Electronic/Rock (Taylor's Version)</td>
+                        <td>Noviembre 12, 2021</td>
+                    </tr>
+                    <tr>
+                        <td><img src="midnights.jpg" alt="Portada del álbum Midnights" width="160"></td>
+                        <td>Synth-Pop/Electro-Pop</td>
+                        <td>Octubre 21, 2022</td>
+                    </tr>
+                    <tr>
+                        <td><img src="SpeakNowTaylorsVersion.jpg" alt="Portada de la regrabación de Speak Now(TaylorsVersion)" width="160"></td>
+                        <td>Country/Pop/Rock (Taylor's Version)</td>
+                        <td>Julio 7, 2023</td>
+                    </tr>
+                    <tr>
+                        <td><img src="1989TaylorsVersion.jpg" alt="Portada de la regrabación de 1989(TaylorsVersion)" width="160"></td>
+                        <td>Pop/Synth-Pop (Taylor's Version)</td>
+                        <td>Octubre 27, 2023</td>
+                    </tr>
+                    <tr>
+                        <td><img src="TheTorturedPoetsDepartment.jpg" alt="Portada del álbum The Tortured Poets Department" width="160"></td>
+                        <td>Indie/Indie-Rock/Electro-Pop</td>
+                        <td>Abril 19, 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="seccion2">
+            <h2>Sección 2 = Información Personal</h2>
+            <p>Información Adicional del blog que quieran saber</p>
+            <form action="procesar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="30" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="acerca-de">
+            <h2>Acerca de</h2>
+            <p>Información sobre el sitio web o el autor.</p>
+            <ul>
+                <li>Arianna Barrera.</li>
+                <li>Guayaquil, EC.</li>
+                <li>Swiftie desde el 2009.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Taylor Swift Blog</p>
+    </footer>
+</body>
+</html>
